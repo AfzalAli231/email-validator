@@ -10,7 +10,7 @@ header {
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: white;
 }
 
@@ -22,22 +22,6 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: white;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 40px;
-}
-
-ul li a {
-  color: #fff;
-  text-decoration: none;
 }
 
 /* Header Ends */
@@ -170,3 +154,55 @@ pre code {
 #results-tag {
   display: none;
 }
+
+/* Responsive Started */
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 10px 20px;
+  }
+
+  main form {
+    flex-direction: column;
+    max-width: 80vw;
+    row-gap: 4px;
+  }
+
+  main form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 10px;
+  }
+
+  main {
+    padding: 4px;
+  }
+
+  footer {
+    padding: 10px 10px;
+  }
+
+  main form {
+    flex-direction: column;
+    max-width: 80vw;
+    row-gap: 4px;
+  }
+
+  main form button {
+    width: 100%;
+  }
+}
+
+/* Responsive Ends */
